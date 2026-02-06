@@ -18,7 +18,7 @@ export const TextGenerateEffect = ({
           {wordsArray.map((word, idx) => {
             return (
               <motion.span
-                key={word + idx}
+                key={`${word}-${idx}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
