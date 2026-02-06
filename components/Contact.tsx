@@ -12,7 +12,7 @@ export const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-5xl font-bold text-white mb-6"
         >
-          Let's Work Together
+          Let&apos;s Work Together
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
