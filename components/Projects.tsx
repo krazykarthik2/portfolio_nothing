@@ -34,7 +34,7 @@ export const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-black mb-12 text-center"
+          className="text-4xl md:text-5xl font-bold tracking-tight text-black mb-12 text-center"
         >
           Projects
         </motion.h2>
