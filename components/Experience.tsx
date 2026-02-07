@@ -4,18 +4,24 @@ import React from "react";
 
 const experiences = [
   {
-    title: "Software Developer",
-    company: "Tech Company",
-    period: "2023 - Present",
-    description:
-      "Building awesome web applications and solving complex problems. Working with modern tech stack and contributing to open source.",
+    title: "MERN Developer Intern",
+    company: "EdAtoZ • Visakhapatnam",
+    period: "Aug 2023 – Feb 2024",
+    highlights: [
+      "Developed and maintained a Learning Management System using the MERN stack.",
+      "Participated in code reviews to ensure quality and best practices.",
+      "Implemented CI/CD workflows using GitHub Actions and managed deployments.",
+    ],
   },
   {
-    title: "Student Developer",
-    company: "University Projects",
-    period: "2020 - 2023",
-    description:
-      "Learned programming, built projects, participated in hackathons, and developed a passion for creating things.",
+    title: "Software Development Intern",
+    company: "RK Info Systems • Hyderabad",
+    period: "June 2023 – Dec 2023",
+    highlights: [
+      "Created applications using Java Swings, SQL, and JSP.",
+      "Learned corporate communication and software development practices.",
+      "Used project management tools like Jira.",
+    ],
   },
 ];
 
@@ -46,7 +52,11 @@ export const Experience = () => {
                 <p className="text-lg text-neutral-600 mt-1">
                   {exp.company} • {exp.period}
                 </p>
-                <p className="text-neutral-700 mt-3">{exp.description}</p>
+                <ul className="text-neutral-700 mt-4 space-y-2 list-disc list-inside">
+                  {exp.highlights.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </motion.div>
           ))}
