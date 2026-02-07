@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { BackgroundBeams } from "./ui/BackgroundBeams";
 
 export const Hero = () => {
   return (
     <div
       id="hero"
-      className="h-screen w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden"
+      className="h-screen w-full rounded-md flex md:items-center md:justify-center bg-black antialiased relative overflow-hidden"
     >
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+      <BackgroundBeams />
       <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-        <p className="text-xs md:text-sm uppercase tracking-[0.35em] text-neutral-400 text-center mb-4">
-          Nothing-inspired portfolio interface
-        </p>
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 bg-opacity-50">
           Karthik &mdash; Full-Stack Engineer
         </h1>
@@ -62,6 +59,25 @@ export const Hero = () => {
           Use number keys 1-7 or the shortcut bar to jump across sections. Keys are
           shown beside every quick action.
         </p>
+      </div>
+      <div className="absolute right-6 top-6 md:right-10 md:top-10 z-10">
+        <div className="relative h-14 w-14 md:h-16 md:w-16">
+          <div className="absolute inset-0 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl shadow-[0_12px_40px_rgba(255,255,255,0.12)]" />
+          <div className="absolute inset-1 rounded-full bg-white/5 border border-white/10" />
+          <div className="relative h-full w-full flex items-center justify-center text-white">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              className="h-7 w-7 drop-shadow-lg"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <circle cx="12" cy="7.5" r="3.25" />
+              <path d="M5.75 18.5c.6-2.6 3.2-4.5 6.25-4.5s5.65 1.9 6.25 4.5" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   );
