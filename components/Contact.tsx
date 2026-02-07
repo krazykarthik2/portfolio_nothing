@@ -10,7 +10,7 @@ export const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl font-bold text-white mb-6"
+          className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6"
         >
           Let&apos;s Work Together
         </motion.h2>
