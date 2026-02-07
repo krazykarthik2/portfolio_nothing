@@ -53,13 +53,17 @@ export const KeyboardShortcuts = () => {
         tagName === "SELECT";
       if (isEditable) return;
 
-      if (event.key === "/") {
+      const normalizedKey = event.key.toLowerCase();
+      if (normalizedKey === "/") {
         event.preventDefault();
         setIsOpen((prev) => !prev);
         return;
       }
 
-      const match = shortcuts.find((item) => item.key.toLowerCase() === event.key.toLowerCase());
+      const match =
+        normalizedKey === "/"
+          ? undefined
+          : shortcuts.find((item) => item.key.toLowerCase() === normalizedKey);
       if (!match) return;
 
       event.preventDefault();
@@ -71,6 +75,9 @@ export const KeyboardShortcuts = () => {
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
+      <span className="sr-only" aria-live="polite">
+        Keyboard navigation panel {isOpen ? "expanded" : "collapsed"}
+      </span>
       {isOpen ? (
         <div className="rounded-2xl border border-white/10 bg-black/80 backdrop-blur shadow-2xl p-4 text-white max-w-sm">
           <div className="mb-3 flex items-center justify-between gap-3">

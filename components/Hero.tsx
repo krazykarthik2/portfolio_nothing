@@ -60,7 +60,11 @@ export const Hero = () => {
           shown beside every quick action.
         </p>
       </div>
-      <div className="absolute right-6 top-6 md:right-10 md:top-10 z-10">
+      <div
+        className="absolute right-6 top-6 md:right-10 md:top-10 z-10"
+        aria-label="User avatar placeholder"
+        role="img"
+      >
         <div className="relative h-14 w-14 md:h-16 md:w-16">
           <div className="absolute inset-0 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl shadow-[0_12px_40px_rgba(255,255,255,0.12)]" />
           <div className="absolute inset-1 rounded-full bg-white/5 border border-white/10" />
