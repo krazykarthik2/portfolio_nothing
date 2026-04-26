@@ -6,7 +6,7 @@ const experiences = [
   {
     title: "MERN Developer Intern",
     company: "EdAtoZ • Visakhapatnam",
-    period: "Aug 2023 – Feb 2024",
+    period: "Aug 2023 – Dec 2024",
     highlights: [
       "Developed and maintained a Learning Management System using the MERN stack.",
       "Participated in code reviews to ensure quality and best practices.",
