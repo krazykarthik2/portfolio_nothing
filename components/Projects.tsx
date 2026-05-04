@@ -202,6 +202,31 @@ export const Projects = () => {
             </div>
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mt-12 flex justify-center"
+        >
+          <a
+            href="https://drive.google.com/drive/folders/1AlTs2gb2jCAJpWSw5FrY2lCwCWZkmz5V?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 border-2 border-black text-black font-medium rounded-lg hover:bg-black hover:text-white transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M6.28 3h11.44l4.29 7.43-5.72 9.9H5.71L1.43 10.43 6.28 3zm5.72 1.5L7.23 12h9.54l-4.77-7.5zM4.35 11l3.1 5.36h9.1L19.65 11H4.35z" />
+            </svg>
+            <span>View Videos &amp; Photos of My Works</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
