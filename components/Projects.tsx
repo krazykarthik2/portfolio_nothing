@@ -214,6 +214,7 @@ export const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 border-2 border-black text-black font-medium rounded-lg hover:bg-black hover:text-white transition-colors"
+            aria-label="View Videos &amp; Photos of My Works (opens in a new tab)"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
